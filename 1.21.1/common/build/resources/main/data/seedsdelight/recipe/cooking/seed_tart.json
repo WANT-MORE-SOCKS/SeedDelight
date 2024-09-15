@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "farmersdelight:pie_crust"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "seedsdelight:sunflower_seed"
+    },
+    {
+      "item": "seedsdelight:acorn_kernel"
+    },
+    {
+      "item": "seedsdelight:pine_nut_kernel"
+    },
+    {
+      "item": "farmersdelight:milk_bottle"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+        "id": "seedsdelight:seed_tart",
+        "count": 4
+
+  }
+}

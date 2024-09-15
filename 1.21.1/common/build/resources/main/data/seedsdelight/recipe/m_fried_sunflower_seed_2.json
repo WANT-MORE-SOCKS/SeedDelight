@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "experience": 0.2,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "seedsdelight:sunflower_seed"
+  },
+  "result": {"id": "seedsdelight:fried_sunflower_seed"}
+}

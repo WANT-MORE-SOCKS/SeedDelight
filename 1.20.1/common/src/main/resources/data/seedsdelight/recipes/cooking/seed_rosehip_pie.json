@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "seedsdelight:cant_eat_seed"
+    },
+    {
+      "tag": "seedsdelight:cant_eat_seed"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "seedsdelight:seed_rosehip_pie"
+  }
+}

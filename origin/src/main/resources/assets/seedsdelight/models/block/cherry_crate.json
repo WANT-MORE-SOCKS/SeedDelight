@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "seeddelight:block/crate_bottom",
+    "up": "seeddelight:block/cherry_crate_top",
+    "north": "seeddelight:block/cherry_crate_side",
+    "east": "seeddelight:block/cherry_crate_side",
+    "south": "seeddelight:block/cherry_crate_side",
+    "west": "seeddelight:block/cherry_crate_side",
+    "particle": "seeddelight:block/crate_bottom"
+  },
+  "render_type": "solid"
+}

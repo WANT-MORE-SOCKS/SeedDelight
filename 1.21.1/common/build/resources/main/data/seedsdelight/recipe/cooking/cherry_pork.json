@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:porkchop"
+    },
+    {
+      "item": "seedsdelight:cherry"
+    },
+    {
+      "tag": "forge:vegetables/onion"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "id": "seedsdelight:cherry_pork"
+  }
+}

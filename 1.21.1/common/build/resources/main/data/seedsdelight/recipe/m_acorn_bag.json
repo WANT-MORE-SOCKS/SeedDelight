@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    },
+    {
+      "item": "seedsdelight:acorn"
+    }
+  ],
+  "result": {
+    "id": "seedsdelight:acorn_bag",
+    "count": 1
+  }
+}

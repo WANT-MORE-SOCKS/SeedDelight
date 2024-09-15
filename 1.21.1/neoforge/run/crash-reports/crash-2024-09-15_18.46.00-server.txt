@@ -1,0 +1,214 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2024-09-15 18:46:00
+Description: Ticking entity
+
+org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-11.0.4.jar:11.0.4+main.d2e20e43] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94) ~[modlauncher-11.0.4.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-11.0.4.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:57) ~[modlauncher-11.0.4.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:190) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$20(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:311) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:214) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:393) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.baseTick(Mob.java:278) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.tick(Entity.java:425) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2392) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.tick(Mob.java:351) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:774) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.Level.guardEntityTick(Level.java:570) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.method_31420(ServerLevel.java:420) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:54) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:400) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1037) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:267) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [puzzleslib.neoforge.mixins.json:EnchantmentHelperNeoForgeMixin from mod puzzleslib] from phase [DEFAULT] in config [puzzleslib.neoforge.mixins.json] FAILED during APPLY
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:638) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:589) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	... 29 more
+Caused by: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException: Critical injection failure: @ModifyVariable annotation on processEquipmentDropChance$0 could not find any targets matching 'lambda$processEquipmentDropChance$24' in net/minecraft/world/item/enchantment/EnchantmentHelper. No refMap loaded. [INJECT_PREPARE Applicator Phase -> puzzleslib.neoforge.mixins.json:EnchantmentHelperNeoForgeMixin from mod puzzleslib -> Prepare Injections -> localvar$zzg000$puzzleslib$processEquipmentDropChance$0(ILnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/damagesource/DamageSource;Lorg/apache/commons/lang3/mutable/MutableFloat;Lnet/minecraft/util/RandomSource;Lnet/minecraft/core/Holder;ILnet/minecraft/world/item/enchantment/EnchantedItemInUse;)I -> Parse ->  -> Validate Targets]
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.selectors.TargetSelectors.validate(TargetSelectors.java:346) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.readAnnotation(InjectionInfo.java:369) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:340) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.<init>(InjectionInfo.java:331) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo.<init>(ModifyVariableInjectionInfo.java:47) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?] {}
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?] {}
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo$InjectorEntry.create(InjectionInfo.java:196) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.injection.struct.InjectionInfo.parse(InjectionInfo.java:664) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.prepareInjections(MixinTargetContext.java:1399) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.prepareInjections(MixinApplicatorStandard.java:731) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:315) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:246) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:437) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:418) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	... 29 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[sponge-mixin-0.15.2+mixin.0.8.7.jar:0.15.2+mixin.0.8.7] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-11.0.4.jar:11.0.4+main.d2e20e43] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:94) ~[modlauncher-11.0.4.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-11.0.4.jar:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.4/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:57) ~[modlauncher-11.0.4.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:190) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$20(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:311) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:298) ~[securejarhandler-3.0.8.jar:?] {}
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:214) ~[securejarhandler-3.0.8.jar:?] {}
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.baseTick(LivingEntity.java:393) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.baseTick(Mob.java:278) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Entity.tick(Entity.java:425) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2392) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.entity.Mob.tick(Mob.java:351) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:774) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.Level.guardEntityTick(Level.java:570) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.method_31420(ServerLevel.java:420) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:54) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:sheep (net.minecraft.world.entity.animal.Sheep)
+	Entity ID: 5
+	Entity Name: 绵羊
+	Entity's Exact location: -10.00, 71.00, 27.00
+	Entity's Block location: World: (-10,71,27), Section: (at 6,7,11 in -1,4,1; chunk contains blocks -16,-64,16 to -1,319,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.Level.guardEntityTick(Level.java:570) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:computing_frames,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A,re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.method_31420(ServerLevel.java:420) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:54) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:400) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1037) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:267) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 0 total; []
+	Chunk stats: 841
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,71,0), Section: (at 0,7,0 in 0,4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 1 game time, 4000 day time
+	Level name: 新的世界
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Known server brands: neoforge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 10
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1718) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A,re:mixin,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1040) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:917) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:110) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:unprotect:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.method_29739(MinecraftServer.java:267) ~[neoforge-21.1.51-minecraft-merged-1.21.1-loom.mappings.1_21_1.layered+hash.40545-v2-neoforge-21.1.51.jar%23191!/:?] {re:classloading,pl:accesstransformer:B,pl:unprotect:A}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.4, Amazon.com Inc.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Amazon.com Inc.
+	Memory: 303220992 bytes (289 MiB) / 2071986176 bytes (1976 MiB) up to 17163091968 bytes (16368 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz
+	Identifier: Intel64 Family 6 Model 165 Stepping 5
+	Microarchitecture: Comet Lake
+	Frequency (GHz): 2.90
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 2060
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 6144.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.6038
+	Memory slot #0 capacity (MiB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 32768.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 70071.49
+	Virtual memory used (MiB): 54588.20
+	Swap memory total (MiB): 4619.08
+	Swap memory used (MiB): 203.39
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 99459.67, total: 485997.28
+	Space in storage for workdir (MiB): available: 99459.67, total: 485997.28
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 0 / 8; []
+	Active Data Packs: vanilla, mod_data, mod/puzzleslib (incompatible), mod/farmersdelight (incompatible), mod/generated_0a6015a (incompatible), mod/architectury (incompatible), mod/seedsdelight, mod/neoforge
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/architectury (incompatible), mod/farmersdelight (incompatible), mod/generated_0a6015a (incompatible), mod/neoforge, mod/puzzleslib (incompatible), mod/seedsdelight, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -8475258128583157796
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.51
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.24.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.24.jar runtime_enum_extender PLUGINSERVICE 
+		unprotect-1.2.0.jar unprotect PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.24.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		puzzles-lib-495476-5720482.jar                    |Puzzles Lib                   |puzzleslib                    |21.1.3              |Manifest: NOSIGNATURE
+		farmers-delight-398521-5566383.jar                |Farmer's Delight              |farmersdelight                |1.2.4               |Manifest: NOSIGNATURE
+		neoforge-21.1.51-minecraft-merged-1.21.1-loom.mapp|Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		13556682951012404095.jar                          |generated_0a6015a             |generated_0a6015a             |1                   |Manifest: NOSIGNATURE
+		architectury-neoforge-13.0.6.jar                  |Architectury                  |architectury                  |13.0.6              |Manifest: NOSIGNATURE
+		main                                              |SeedsDelight                  |seedsdelight                  |1.0-SNAPSHOT        |Manifest: NOSIGNATURE
+		neoforge-21.1.51-minecraft-merged-1.21.1-loom.mapp|NeoForge                      |neoforge                      |21.1.51             |Manifest: NOSIGNATURE
+	Crash Report UUID: 341ff33a-1600-49bd-a6a4-ee68569ed758
+	FML: 4.0.24
+	NeoForge: 21.1.51

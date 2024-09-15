@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/seedsdelight.iml" filepath="$PROJECT_DIR$/.idea/modules/seedsdelight.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/seedsdelight.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/seedsdelight.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/seedsdelight.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/seedsdelight.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/seedsdelight.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/seedsdelight.common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/seedsdelight.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/seedsdelight.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/seedsdelight.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/seedsdelight.fabric.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/seedsdelight.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/seedsdelight.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/seedsdelight.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/seedsdelight.forge.test.iml" />
+    </modules>
+  </component>
+</project>

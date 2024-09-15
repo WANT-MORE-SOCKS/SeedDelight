@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    },
+    {
+      "item": "seedsdelight:rosehip"
+    }
+  ],
+  "result": {
+    "item": "seedsdelight:rosehip_crate",
+    "count": 1
+  }
+}

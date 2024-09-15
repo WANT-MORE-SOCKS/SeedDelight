@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "seedsdelight:sunflower_seed"
+    },
+    {
+      "item": "seedsdelight:sunflower_seed"
+    }
+  ],
+  "result": {
+    "item": "seedsdelight:sunflower_seed_toast",
+    "count": 1
+  }
+}

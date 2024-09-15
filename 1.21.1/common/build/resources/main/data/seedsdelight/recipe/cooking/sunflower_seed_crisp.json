@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "seedsdelight:sunflower_seed"
+    },
+    {
+      "item": "seedsdelight:sunflower_seed"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+        "id": "seedsdelight:sunflower_seed_crisp",
+        "count": 5
+
+  }
+}

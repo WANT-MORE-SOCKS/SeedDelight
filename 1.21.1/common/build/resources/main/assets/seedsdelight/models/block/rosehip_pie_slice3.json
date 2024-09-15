@@ -1,0 +1,12 @@
+{
+  "parent": "seedsdelight:custom/rosehip_pie_slice3",
+  "textures": {
+    "all": "seedsdelight:block/pie_bottom",
+    "particle": "seedsdelight:block/pie_bottom",
+    "0": "seedsdelight:block/rosehip_pie_inner",
+    "1": "seedsdelight:block/pie_side",
+    "2": "seedsdelight:block/rosehip_pie_top",
+    "3": "seedsdelight:block/pie_bottom"
+  },
+  "render_type": "solid"
+}

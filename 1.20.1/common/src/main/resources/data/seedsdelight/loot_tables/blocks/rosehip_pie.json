@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "seedsdelight:blocks/rosehip_pie",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "seedsdelight:rosehip_pie"
+        }
+      ]
+    }
+  ]
+}
