@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "seeddelight",
+  "version": "${version}",
+
+  "name": "Seed Delight",
+  "description": "SeedDelight",
+  "authors": [],
+  "contact": {},
+
+  "license": "LGPL-3.0",
+  "icon": "assets/seeddelight/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": ["org.hiedacamellia.seeddelight.client.SeedDelightClient"],
+    "main": ["org.hiedacamellia.seeddelight.SeedDelight"]
+  },
+
+  "mixins": [
+    "seeddelight.mixins.json"
+    ,{
+      "config": "seeddelight.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

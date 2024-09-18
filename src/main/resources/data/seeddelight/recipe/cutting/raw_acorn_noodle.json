@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "seeddelight:acorn_tofu"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "id": "seeddelight:raw_acorn_noodle",
+        "count": 1
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

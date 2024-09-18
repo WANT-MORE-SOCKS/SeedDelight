@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    },
+    {
+      "item": "seeddelight:pinecone"
+    }
+  ],
+  "result": {
+    "id": "seeddelight:pinecone_bag",
+    "count": 1
+  }
+}
