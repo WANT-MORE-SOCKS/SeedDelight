@@ -63,9 +63,9 @@ public class ItemRegistry {
     public static final RegistryObject<Item> RawAcornNoodle = registerWithTab("raw_acorn_noodle",
             ()-> new ConsumableItem(foodItem(FoodList.RawAcornNoodle.get())));
     public static final RegistryObject<Item> CherryJamJar = registerWithTab("cherry_jam_jar",
-            ()-> new ConsumableItem(basicItem()));
+            ()-> new ConsumableItem(basicItem().craftRemainder(Items.GLASS_BOTTLE)));
     public static final RegistryObject<Item> RosehipJamJar = registerWithTab("rosehip_jam_jar",
-            ()-> new ConsumableItem(basicItem()));
+            ()-> new ConsumableItem(basicItem().craftRemainder(Items.GLASS_BOTTLE)));
     public static final RegistryObject<Item> RosehipTea = registerWithTab("rosehip_tea",
             ()-> new DrinkableItem(drinkItem().food(FoodList.RosehipTea.get()), true, false));
     public static final RegistryObject<Item> CherryWine = registerWithTab("cherry_wine",
