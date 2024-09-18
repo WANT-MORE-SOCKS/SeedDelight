@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "experience": 0.1,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "minecraft:pumpkin_seeds"
+  },
+  "result": {
+    "id":"seeddelight:dried_pumpkin_seed",
+    "count": 1
+  }
+}

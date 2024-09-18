@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "seeddelight:block/bag_bottom",
+    "up": "seeddelight:block/pinecone_bag_top",
+    "north": "seeddelight:block/bag_side_tied",
+    "east": "seeddelight:block/bag_side",
+    "south": "seeddelight:block/bag_side_tied",
+    "west": "seeddelight:block/bag_side",
+    "particle": "seeddelight:block/bag_bottom"
+  },
+  "render_type": "solid"
+}
