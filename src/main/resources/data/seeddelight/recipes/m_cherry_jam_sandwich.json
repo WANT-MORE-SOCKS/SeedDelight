@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/breads"
+    },
+    {
+      "item": "seeddelight:cherry_jam_jar"
+    },
+    {
+      "tag": "c:foods/breads"
+    }
+  ],
+  "result": {
+    "item": "seeddelight:cherry_jam_sandwich",
+    "count": 2
+  }
+}
